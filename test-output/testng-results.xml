@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="399" started-at="2017-08-08T14:11:07Z" finished-at="2017-08-08T14:11:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="399" started-at="2017-08-08T14:11:07Z" finished-at="2017-08-08T14:11:07Z">
+      <class name="com.testng.dataprovider.email.Mail">
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.testng.dataprovider.email.Mail@553f17c]" name="setData" is-config="true" duration-ms="360" started-at="2017-08-08T19:41:07Z" finished-at="2017-08-08T19:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@553f17c]" name="sendMail" duration-ms="5" started-at="2017-08-08T19:41:07Z" data-provider="getMailList" finished-at="2017-08-08T19:41:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MailMetaData [from=Sender, to=Recipent, subject=Subject, body=Body]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@553f17c]" name="sendMail" duration-ms="2" started-at="2017-08-08T19:41:07Z" data-provider="getMailList" finished-at="2017-08-08T19:41:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MailMetaData [from=parasporwal@qainfotech.com, to=mayankchauhan@qainfotech.com, subject=TestMail, body=Hi, This is automated test mail.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+      </class> <!-- com.testng.dataprovider.email.Mail -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
