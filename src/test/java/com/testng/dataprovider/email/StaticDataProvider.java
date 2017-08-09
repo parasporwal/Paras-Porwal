@@ -15,7 +15,7 @@ public class StaticDataProvider {
 		         
 		        
 		         Object[][] array=new Object[mailList.size()][1];
-		         for(int index=0;index<mailList.size();index++){
+		         for(int index=1;index<mailList.size();index++){
 		        	 array[index][0]=mailList.get(index);
 		         }
 		          return  array;

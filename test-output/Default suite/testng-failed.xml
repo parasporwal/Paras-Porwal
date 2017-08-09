@@ -5,7 +5,8 @@
     <classes>
       <class name="com.testng.dataprovider.email.Mail">
         <methods>
-          <include name="sendMail"/>
+          <include name="sendMail" invocation-numbers="0"/>
+          <include name="login"/>
           <include name="setData"/>
         </methods>
       </class> <!-- com.testng.dataprovider.email.Mail -->

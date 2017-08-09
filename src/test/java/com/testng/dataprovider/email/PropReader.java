@@ -4,14 +4,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class PropReder {
+public class PropReader {
    ClassLoader classloader;
    Properties props;
-	public String getOptionValue(String key) throws IOException{
+	public String getOptionValue(String key) {
 		props=new Properties();
 		classloader=getClass().getClassLoader();
 		InputStream instream=this.getClass().getClassLoader().getResourceAsStream("db.properties");
-        props.load(instream);
+        try {
+			props.load(instream);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         return props.getProperty(key);
         
 	
