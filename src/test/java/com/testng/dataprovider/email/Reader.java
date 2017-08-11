@@ -55,7 +55,7 @@ public class Reader implements IDataProvider{
 			mailList.add(mailPOJO);
 		}
 		
-
+       System.out.println("list : "+mailList);
 	}
 
 	public List getListOfData() {

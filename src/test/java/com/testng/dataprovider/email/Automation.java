@@ -32,22 +32,22 @@ public class Automation {
 		pswd.sendKeys(password);
 	}
 	public void clickBtn(String loc, String locType){
-		WebElement btn=driver.findElement(By.cssSelector(loc));
+		WebElement btn=(new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(loc))));
 		btn.click();
 	}
 	private void genericBy(String loc, String locType){
 		
 	}
 	
-	public void selectComposeBtn(String loc, String loctype){
+	public void clickBtnByXpath(String loc, String loctype){
 		WebElement compose=(new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath(loc))));
 		compose.click();
 	}
          
-	public void enterDetail(String loc,String sendTo,String data){
-		WebElement senderlabel=(new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(loc))));
-		senderlabel.click();
-		senderlabel.sendKeys(sendTo);
+	public void enterDetail(String loc,String locType,String data){
+		WebElement element=(new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(loc))));
+	//	senderlabel.click();
+		element.sendKeys(data);
 	}
 	
 	

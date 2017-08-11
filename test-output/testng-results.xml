@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10287" started-at="2017-08-09T14:04:55Z" finished-at="2017-08-09T14:05:05Z">
+  <suite name="Default suite" duration-ms="63020" started-at="2017-08-11T06:44:45Z" finished-at="2017-08-11T06:45:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10287" started-at="2017-08-09T14:04:55Z" finished-at="2017-08-09T14:05:05Z">
+    <test name="Default test" duration-ms="63020" started-at="2017-08-11T06:44:45Z" finished-at="2017-08-11T06:45:48Z">
       <class name="com.testng.dataprovider.email.Mail">
-        <test-method status="PASS" signature="setData()[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="setData" is-config="true" duration-ms="383" started-at="2017-08-09T19:34:55Z" finished-at="2017-08-09T19:34:55Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="setData" is-config="true" duration-ms="319" started-at="2017-08-11T12:14:45Z" finished-at="2017-08-11T12:14:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="login" is-config="true" duration-ms="10249" started-at="2017-08-09T19:34:55Z" finished-at="2017-08-09T19:35:05Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="login" is-config="true" duration-ms="20674" started-at="2017-08-11T12:14:45Z" finished-at="2017-08-11T12:15:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="sendMail" duration-ms="6" started-at="2017-08-09T19:35:05Z" data-provider="getMailList" finished-at="2017-08-09T19:35:05Z">
+        <test-method status="FAIL" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="sendMail" duration-ms="7" started-at="2017-08-11T12:15:06Z" data-provider="getMailList" finished-at="2017-08-11T12:15:06Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -24,7 +24,7 @@
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.testng.dataprovider.email.Mail.sendMail(Mail.java:44)
+	at com.testng.dataprovider.email.Mail.sendMail(Mail.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,11 +56,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendMail -->
-        <test-method status="PASS" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="sendMail" duration-ms="1" started-at="2017-08-09T19:35:05Z" data-provider="getMailList" finished-at="2017-08-09T19:35:05Z">
+        <test-method status="PASS" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="sendMail" duration-ms="14127" started-at="2017-08-11T12:15:06Z" data-provider="getMailList" finished-at="2017-08-11T12:15:20Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[MailMetaData [from=parasporwal@qainfotech.com, to=mayankchauhan@qainfotech.com, subject=TestMail, body=Hi, This is automated test mail.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="sendMail" duration-ms="14159" started-at="2017-08-11T12:15:20Z" data-provider="getMailList" finished-at="2017-08-11T12:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MailMetaData [from=, to=ankitmalik@qainfotech.com, subject=TestMail, body=Hi, This is automated test mail. Kindly ignore this.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="sendMail(com.testng.dataprovider.email.MailMetaData)[pri:0, instance:com.testng.dataprovider.email.Mail@4f7d0008]" name="sendMail" duration-ms="14027" started-at="2017-08-11T12:15:34Z" data-provider="getMailList" finished-at="2017-08-11T12:15:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MailMetaData [from=, to=porwalparascs97@gmail.com, subject=TestMail, body=Hi, This is automated test mail.]]]>
               </value>
             </param>
           </params>
