@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="sendMailParallelly" verbose="3" parallel="methods" thread-count="5">
+<test name="patronouscharm">
+<classes>
+<class name="com.testng.dataprovider.email.Mail">
+ <methods>
+  <include name="login"/>
+ </methods>
+</class>
+</classes>
+</test>
+</suite>
